@@ -37,8 +37,8 @@ body{
 .wrap-1.top-header .social-media li{padding: 0 10px;}
 
 /* Navbar */
-.navbar-postions{position: relative; z-index: 1;}
 .navbar{background: var(--background-color) !important;}
+.navbar.sticky-top{top: 0; z-index: 11111;}
 .navbar li{margin: 5px;}
 li a{padding: 8px !important; color: var(--black) !important; font: 500 14px var(--pf) !important;}
 li a:hover{color: var(--orange) !important;}
@@ -49,7 +49,7 @@ li a:hover{color: var(--orange) !important;}
 .wrap-3{background: var(--background-color); padding-top: 80px; position: relative; z-index: 1; overflow: hidden;}
 .circle::before{background-color: var(--shape-color); content: ''; height: 800px; width: 800px; position: absolute; top: -400px; left: -350px; border-radius: 100%; opacity: .2; z-index: -1;}
 .common-heading{margin-bottom: 40px;}
-.common-heading h2{font: 600 38px var(--pf) !important; color: var(--heading-color);}
+.common-heading h2{font: 600 35px var(--pf) !important; color: var(--heading-color);}
 .heading-border{display: inline-block; width: 100px !important; border-top: 5px solid var(--orange) !important;}
 p{font: 400 14px/1.7 var(--pf) !important; color: var(--text-color); margin: 0 !important;}
 .wrap-3 img{border-radius: 5px;}
@@ -79,7 +79,7 @@ p{font: 400 14px/1.7 var(--pf) !important; color: var(--text-color); margin: 0 !
 
 /* Wrap-7 */
 .wrap-7{padding: 40px 0;}
-.wrap-7 .gallery{width: 100%; height: 350px; overflow: hidden; position: relative;}
+.wrap-7 .gallerys{width: 100%; height: 350px; overflow: hidden; position: relative;}
 .wrap-7 img{width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease-out; }
 .wrap-7 img:hover{transform: scale(1.2);}
   
@@ -102,7 +102,7 @@ p{font: 400 14px/1.7 var(--pf) !important; color: var(--text-color); margin: 0 !
 
 /* Sub-Page */
 .sub-page{ background: url(../img/sub-page.webp) no-repeat center/cover scroll ; min-height: 300px; display: flex; align-items: center;}
-.sub-page .page-content h2{font: 700 38px var(--pf); color: var(--white); margin: 0;}
+.sub-page .page-content h2{font: 700 35px var(--pf); color: var(--white); margin: 0;}
 .sub-page .page-content p{font: 400 14px/1.7 var(--pf); color: var(--white);}
 .sub-page .navigation-page{background-color: transparent; padding: 0;}
 .sub-page .navigation-page li{font: 600 12px var(--pf) !important; margin: 5px 0;}
@@ -145,3 +145,19 @@ p{font: 400 14px/1.7 var(--pf) !important; color: var(--text-color); margin: 0 !
 .member-login .login{width: 100%; max-width: 600px; background: var(--white); padding: 40px 40px; margin: 0 auto; border-radius: 10px;}
 .member-login .login .text3{font-size: 12px; color: var(--text-color);}
 .member-login .login label{color: var(--text-color);}
+
+/* Registration Form */
+.registration{padding: 40px 0;}
+.downloadbtn a{color: var(--heading-color);}
+.downloadbtn{padding: 40px 0; max-width: 400px; margin: 0 auto; box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;}
+
+/* Media Query */
+/* @media screen and (max-width:767px){
+    .common-heading h2 {font: 600 32px var(--pf) !important;}
+} */
+@media screen and (max-width:460px){
+    .common-heading h2 {font: 600 25px var(--pf) !important;}
+    p {font: 400 12px / 1.7 var(--pf) !important;}
+    .sub-page .page-content h2{font: 700 25px var(--pf);}
+
+}
